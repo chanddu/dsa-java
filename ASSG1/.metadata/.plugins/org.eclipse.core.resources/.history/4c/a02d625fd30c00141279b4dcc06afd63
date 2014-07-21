@@ -1,0 +1,11 @@
+
+public class Alike {
+	public static void main(String args[]){
+		String str1[];
+		String str2[];
+		System.out.println("Input two strings to verify");
+		Check checker = new Check();
+		str1 = checker.readString();
+		str2 = checker.readString();
+	}
+}

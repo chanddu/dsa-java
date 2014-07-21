@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+
+public class Check {
+	private int [][] solutionArray;
+	Scanner reader = new Scanner(System.in);
+	@SuppressWarnings("null")
+	public int[][] readSudoku(int numberOfRows){
+		int sudokuArray[][] = null;
+		for(int i=0;i<numberOfRows;i++){
+			for(int j=0;j<numberOfRows;j++){
+				sudokuArray[i][j] = reader.nextInt();
+			}
+		}
+		return sudokuArray;
+	}
+	
+	public boolean checkConsistencyAtRead(int sudokuArray[][]){
+		int n = sudokuArray[1].length;
+		for(int i=0;i<n;i++){
+			for(int j=0;j<n;j++){
+				int sudokuEntry = reader.nextInt();
+				if(sudokuEntry <= n && sudokuEntry > 0 && sudokuArray[i][j] == sudokuEntry|| sudokuArray[i][j] == 0)
+					solutionArray[i][j] = sudokuEntry;
+				else
+					return false;
+			}
+		}
+		return true;
+	}
+	
+	public boolean checkRepitition(){
+		return false;
+	}
+	
+	public boolean checkRepititionInRow(){
+		return false;
+	}
+	
+	public boolean checkRepititionInColoumn(){
+		return false;
+	}
+	
+	public boolean checkRepititionInBlock(){
+		return false;
+	}
+	
+	public int[][] getSolutionArray(){
+		return solutionArray;
+	}
+}

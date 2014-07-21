@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+
+public class Check {
+	
+	Scanner reader = new Scanner(System.in);
+	public String[] readString(){
+		String str;
+		str = reader.nextLine();
+		String []s = str.split(" ");
+		return s;
+	}
+}

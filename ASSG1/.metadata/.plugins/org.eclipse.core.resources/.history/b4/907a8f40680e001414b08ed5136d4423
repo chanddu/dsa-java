@@ -1,0 +1,11 @@
+
+public class Check {
+	public int[][] readSudoku(){
+		
+		return null;
+	}
+	
+	public int checkConsistencyAtRead(){
+		return 0;
+	}
+}

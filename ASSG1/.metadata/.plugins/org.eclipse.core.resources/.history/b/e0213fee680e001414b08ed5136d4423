@@ -1,0 +1,15 @@
+
+public class Check {
+	public int[][] readSudoku(){
+		
+		return null;
+	}
+	
+	public boolean checkConsistencyAtRead(){
+		return false;
+	}
+	
+	public boolean checkRepitition(){
+		return false;
+	}
+}

@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+
+public class Reverse {
+	private int array[];
+	Scanner reader = new Scanner(System.in);
+	public void readArray(){
+		int i = 0;
+		System.out.println("Enter the array elements");
+		for(int number:array){
+			number = reader.nextInt();
+			array[i] = number;
+		}
+		
+	}
+	
+	public void printReverseArray(){
+		for(int number:array){
+			System.out.println(number);
+		}
+	}
+	public void reverseArray(int array[],int startPosition,int endPosition){
+		swap(array[startPosition],array[endPosition-startPosition-1]);
+		startPosition++;
+		if(startPosition == endPosition/2)
+			;
+		else
+			reverseArray(array, startPosition, endPosition);
+	}
+
+	public void swap(int a,int b){
+		int temp;
+		temp = a;
+		a = b;
+		b= temp;
+	}
+}

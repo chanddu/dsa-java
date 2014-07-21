@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+public class Check {
+	Scanner reader = new Scanner(System.in);
+	@SuppressWarnings("null")
+	public int[][] readSudoku(int numberOfRows){
+		int array[][] = null;
+		for(int i=0;i<numberOfRows;i++){
+			for(int j=0;j<numberOfRows;j++){
+				array[i][j] = reader.nextInt();
+			}
+		}
+		return array;
+	}
+	
+	public boolean checkConsistencyAtRead(){
+		return false;
+	}
+	
+	public boolean checkRepitition(){
+		return false;
+	}
+	
+	public boolean checkRepititionInRow(){
+		return false;
+	}
+	
+	public boolean checkRepititionInColoumn(){
+		return false;
+	}
+	
+	public boolean checkRepititionInBlock(){
+		return false;
+	}
+}
